@@ -16,6 +16,26 @@ body {
     margin-bottom: 10px;
 }
 
+.navbar img:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 100%, 50%, 80% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px)
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
 .picture {
     height: 800px;
     background-image: url("landing.jpg");
